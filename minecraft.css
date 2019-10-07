@@ -35,8 +35,10 @@ a {
 }
 
 .btn {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   height: 40px;
+  width: 23em;
+  text-align: center;
   font-size: 1em;
   font-weight: 900;
   text-transform: uppercase;
@@ -150,7 +152,7 @@ nav > ul {
 }
 
 #hero input[type="submit"] {
-  max-width: 150px;
+ /* max-width: 150px; */
   width: 100%;
   height: 30px;
   margin: 15px 0;
@@ -290,6 +292,7 @@ footer {
   margin-top: 30px;
   background-color: #ddd;
   padding: 20px;
+  text-align: center;
 }
 
 footer > ul {
@@ -307,4 +310,42 @@ footer > span {
   justify-content: flex-end;
   font-size: 0.9em;
   color: #444;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
