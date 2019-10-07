@@ -51,6 +51,7 @@ a {
 
 .grid {
   display: flex;
+  border: 1px;
 }
 
 header {
@@ -194,12 +195,14 @@ nav > ul {
 }
 
 #features .desc {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 125px;
-  width: 80vw;
+  width: 100%;
   padding: 5px;
+  border: solid;
 }
 
 @media (max-width: 550px) {
@@ -356,8 +359,8 @@ footer > span {
 
 a:link {
   color: rgb(0, 8, 255);
-  background-color: transparent;
-  text-decoration: none;
+  /* background-color: transparent;
+  text-decoration: none; */
 }
 a:visited {
   color: rgb(68, 2, 25);
